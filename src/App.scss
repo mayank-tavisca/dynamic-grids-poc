@@ -44,8 +44,17 @@
 }
 
 .table2 {
-  div[class^="dynamicGrid_tableRow__"] {
-    color: yellow;
-    background-color: rgba(100, 100, 100, 0.5);
+  div[class^="dynamicGrid_table__"] {
+    div[class^="dynamicGrid_tableRow__"] {
+      color: yellow;
+      background-color: rgba(100, 100, 100, 0.5);
+
+      div[class*="dynamicGrid_tableHeader__"] {
+        background: red !important;
+        span {
+          padding: 0 10px !important;
+        }
+      }
+    }
   }
 }
