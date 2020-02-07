@@ -44,15 +44,18 @@
 }
 
 .table2 {
+  width: 700px;
   div[class^="dynamicGrid_table__"] {
     div[class^="dynamicGrid_tableRow__"] {
       color: yellow;
-      background-color: rgba(100, 100, 100, 0.5);
+      background-color: rgba(100, 100, 100, 0.9);
 
       div[class*="dynamicGrid_tableHeader__"] {
-        background: red !important;
-        span {
-          padding: 0 10px !important;
+        background: red;
+        div[class^="dynamicGrid_sortIcon__"] {
+          color: black;
+          font-size: 14px;
+          padding-left: 10px;
         }
       }
     }

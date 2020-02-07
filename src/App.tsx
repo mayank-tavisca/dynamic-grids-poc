@@ -2,7 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import DynamicGrid from "@bit/mayank-tavisca.dynamicgrid.dynamic-grid";
-const Data1 = {
+import { IConfig } from "@bit/mayank-tavisca.dynamicgrid.dynamic-grid/dist/utils";
+const Data1: IConfig = {
   headers: [
     { label: "User Names", value: "username" },
     { label: "Emails", value: "email" },
@@ -53,9 +54,10 @@ const Data1 = {
       gender: "F"
     }
   ],
-  styles: {},
   paginationEnabled: true,
-  pagination: {},
+  pagination: {
+    defaultRowsCount: 5
+  },
   sortingEnabled: true,
   sorting: {
     defaultOrder: "ascending",
